@@ -48,7 +48,6 @@ const Customer: React.FC = () => {
                     placeholder={'rut'}
                     mask={RutTextMask}
                     onChange={e => {
-                        const regex = /dog/gi;
                         setRut(e.target.value.replace(/[^0-9]+/g, ""));
                     }}
                 />
