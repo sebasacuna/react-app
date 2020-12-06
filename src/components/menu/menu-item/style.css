@@ -1,0 +1,24 @@
+
+.wrapper-menu-item{
+    display: flex;
+    padding: 1rem 2rem;
+    align-items: center;
+    color: #ececec;
+    background: #141414;
+    font-family: 'Cabin Bold', sans-serif;
+    cursor: pointer;
+}
+
+a:link {
+    color: #ececec;
+}
+
+a:visited {
+    color: #ececec;
+}
+
+.wrapper-menu-item:hover {
+    background: #ececec !important;
+    color: #141414 !important;
+    text-decoration:none !important;
+}

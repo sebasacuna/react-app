@@ -1,0 +1,66 @@
+{
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "parser":"babel-eslint",
+  "plugins": ["import"],
+
+  "overrides": [
+    {
+      "files": ["*.js"],
+      "rules": {
+        "import/no-unused-modules": [
+          "error",
+          {
+            "src": ["**/*.js"],
+            "missingExports": false,
+            "unusedExports": true
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*.ts"],
+      "rules": {
+        "no-console": 1,
+        "no-dupe-args": 2,
+        "no-duplicate-case": 2,
+        "no-empty": 2,
+        "no-sequences": 2,
+        "no-redeclare": 2,
+        "no-new-func": 2,
+        "prefer-spread": 1
+      }
+    },
+    {
+      "files": ["*.jsx"],
+      "rules": {
+        "import/no-unused-modules": [
+          "error",
+          {
+            "src": ["**/*.jsx"],
+            "missingExports": false,
+            "unusedExports": true
+          }
+        ]
+      }
+    },
+    {
+      "files": ["*.tsx"],
+      "rules": {
+        "no-console": 1,
+        "no-dupe-args": 2,
+        "no-duplicate-case": 2,
+        "no-empty": 2,
+        "no-sequences": 2,
+        "no-redeclare": 2,
+        "no-new-func": 2,
+        "prefer-spread": 1
+      }
+    }
+  ]
+}

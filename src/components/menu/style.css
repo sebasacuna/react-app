@@ -1,0 +1,16 @@
+
+.menu-title{
+    display: flex;
+    background: #141414;
+    color: #ececec;
+    cursor: pointer;
+    font-size: 20px;
+    padding: 0.1rem;
+    font-family: sans-serif;
+    padding-left: 1rem;
+}
+
+.wrapper-menus{
+    display: flex;
+    flex-direction: column;
+}
