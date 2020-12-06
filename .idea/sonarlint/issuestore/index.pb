@@ -13,8 +13,6 @@ F
 src/react-app-env.d.ts,4\a\4a7b99bdbee5792679d347b6474463bf5e14b66d
 >
 .eslintrc.json,7\1\71c20a341bfe32aa5cd5b4384e94f942bab6a7d3
-L
-src/components/menu/menu.tsx,8\9\89c8ac97eb754b1ac25d00582ee8717eb6b9d617
 ;
 src/App.tsx,8\3\835da56f32df714aaed6285a5b7fc3a7807851e4
 <
@@ -29,3 +27,12 @@ M
 src/layouts/sidebar/style.css,e\4\e49fa9dc3fd7bdcb3cf1376c0cc3dcd0e6a35f0b
 M
 src/layouts/sidebar/index.tsx,8\d\8d855bd267ba352e242a339898ee45f165050c87
+A
+src/api/Global.ts,4\0\4046662f9eb275657374f370e8d8bd14272ea675
+:
+
+Dockerfile,6\6\6651ddff6eb82c840ced7c1dddee15c6e1913dd4
+>
+src/api/Api.ts,5\1\51a91581c637913d983b9a6d436f59240354a866
+N
+src/screens/customer/index.tsx,1\5\15915fa2710986f29eff337fe62530ce56e7d7fc

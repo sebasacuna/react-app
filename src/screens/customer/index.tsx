@@ -29,12 +29,10 @@ const Customer: React.FC = () => {
         const data = await response.data;
 
         if (response.status === 200) {
-            console.log(data);
             setCustomer(oldState => {
                 return ({...oldState, data: data, loaded: true});
             });
             setError(false);
-            console.log(customer);
         } else {
             setError(true);
             setErrorMsg(data.message);
@@ -52,7 +50,6 @@ const Customer: React.FC = () => {
                     onChange={e => {
                         const regex = /dog/gi;
                         setRut(e.target.value.replace(/[^0-9]+/g, ""));
-                        console.log(rut);
                     }}
                 />
                 <button onClick={search}>Search</button>
