@@ -22,3 +22,19 @@ a:visited {
     color: #141414 !important;
     text-decoration:none !important;
 }
+
+.title{
+    margin-bottom: 2rem;
+}
+
+.controls{
+    display: flex;
+}
+
+.customer-container{
+    margin-top: 1rem;
+}
+
+.controls> *{
+    margin-right: 2rem !important;
+}

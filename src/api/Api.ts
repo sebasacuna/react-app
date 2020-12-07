@@ -16,7 +16,11 @@ interface ApiError {
 
 const getCustomer = async (rut: string) => {
 
-    const resp: AxiosResponse = await axios.get(`${globalEndpoint}/customer/${rut}`)
+    const resp: AxiosResponse = await axios.get(`${globalEndpoint}/customer/${rut}`, {
+        headers: {
+            'Access-Control-Allow-Origin': '*'
+        }
+    })
         .catch(function (error) {
             if (error.response) {
                 console.error(error.response.data);

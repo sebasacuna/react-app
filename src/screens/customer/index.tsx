@@ -2,9 +2,7 @@ import React, {useState} from "react";
 
 import {Container} from "react-bootstrap";
 import getCustomer from "../../api/Api";
-import MaskedInput from 'react-text-mask'
 // @ts-ignore
-import RutTextMask from 'rut-text-mask';
 
 const Customer: React.FC = () => {
 
@@ -23,35 +21,45 @@ const Customer: React.FC = () => {
         placeholder: 'Loading'
     });
 
-    const search = async (event: any) => {
+    const search = async (event: React.FormEvent) => {
         event.preventDefault();
-        const response = await getCustomer(rut);
-        const data = await response.data;
 
-        if (response.status === 200) {
-            setCustomer(oldState => {
-                return ({...oldState, data: data, loaded: true});
-            });
-            setError(false);
-        } else {
-            setError(true);
-            setErrorMsg(data.message);
+        if (rut.length > 1) {
+            const response = await getCustomer(rut);
+            const data = await response.data;
+
+            if (response.status === 200) {
+                setCustomer(oldState => {
+                    return ({...oldState, data: data, loaded: true});
+                });
+                setError(false);
+            } else {
+                setError(true);
+                setErrorMsg(data.message);
+            }
+
         }
+    }
+
+    const onChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+        const value = event.target.value;
+        setRut(event.target.value.replace(/[^0-9]{k}+/g, ""));
     }
 
     // @ts-ignore
     return (
         <>
             <Container fluid className='mt-5 pl-5 pr-5'>
-                <h1>Home</h1>
-                <MaskedInput
-                    placeholder={'rut'}
-                    mask={RutTextMask}
-                    onChange={e => {
-                        setRut(e.target.value.replace(/[^0-9]+/g, ""));
-                    }}
-                />
-                <button onClick={search}>Search</button>
+                <h1 className={'title'}>Customer</h1>
+                <div className={'controls'}>
+                    <input
+                        placeholder={'rut'}
+                        minLength={1}
+                        onChange={onChange}
+                    />
+                    <button onClick={search}>Search</button>
+
+                </div>
                 {
                     (customer.loaded && !error) &&
                     <div className={'customer-container'}>

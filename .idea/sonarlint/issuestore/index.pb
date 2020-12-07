@@ -36,3 +36,8 @@ Dockerfile,6\6\6651ddff6eb82c840ced7c1dddee15c6e1913dd4
 src/api/Api.ts,5\1\51a91581c637913d983b9a6d436f59240354a866
 N
 src/screens/customer/index.tsx,1\5\15915fa2710986f29eff337fe62530ce56e7d7fc
+J
+src/screens/page/index.tsx,9\f\9fdd8114943a5d86f7bd676f0e950e70e69e99dc
+:
+
+.gitignore,a\5\a5cc2925ca8258af241be7e5b0381edf30266302
