@@ -1,5 +1,5 @@
 import axios, {AxiosResponse} from "axios"
-import {globalEndpoint} from "api/Global";
+import {globalEndpoint} from "./Global";
 const Promise = require('es6-promise').Promise;
 
 export interface Customer {
