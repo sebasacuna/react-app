@@ -3,8 +3,6 @@ import './style.css';
 
 export type TpyOfMessages = 'INFO'|'ERROR'|'WARNING';
 
-
-
 interface Props {
     message: string,
     type: TpyOfMessages
