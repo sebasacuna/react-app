@@ -47,4 +47,4 @@ const InputRut: React.FC<Props> = ({value, callback}) => {
 }
 
 
-export default InputRut;
+export default React.memo(InputRut);

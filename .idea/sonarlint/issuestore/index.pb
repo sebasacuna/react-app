@@ -47,3 +47,15 @@ S
 #.idea/sonarlint/issuestore/index.pb,9\f\9fe84ebb15faf917b7def6236dba604453cc61e0
 @
 build/index.html,9\9\990a85f5e72fc21bd93d9e8ddb10d110045a91c8
+M
+src/shared/constants/index.ts,8\c\8c62a83b735fc3a58a06da28b23a5f334ce94b08
+Q
+!src/components/messages/index.tsx,f\f\fff1e3a6e0fcbe1c96799fb6ed3587a4df53fb47
+A
+src/setupTests.js,b\7\b7e8d8f421068b8d51c89805d2035e747be2ff17
+F
+src/reportWebVitals.js,1\c\1ce5e63ae1582ed0b425c46001299a07515efbf9
+Y
+)src/components/inputs/input-rut/index.tsx,d\8\d8459e139079a5bc1448d8f8d2d2aba957d5d46f
+^
+.src/screens/customer/customer-detail/index.tsx,4\b\4baebf0c2f5af921c8659d4da8346e3a5434be77

@@ -1,11 +1,11 @@
-import React, {useState} from "react";
+import React, {useCallback, useState} from "react";
 
 import {Container} from "react-bootstrap";
 import getCustomer from "../../api/Api";
-import InputRut from "../../components/inputs/input-rut";
 import CustomerDetails from "./customer-detail";
+import InputRut from "../../components/inputs/input-rut";
 import Message from "../../components/messages";
-// @ts-ignore
+
 
 const Customer: React.FC = () => {
 
@@ -13,9 +13,10 @@ const Customer: React.FC = () => {
     const [errorMsg, setErrorMsg] = useState('');
     const [rut, setRut] = useState('');
 
-    const setValue = (value: string) => {
-        setRut(value);
-    }
+    const setValue = useCallback((value: string) => {
+        setRut(value)
+    },[rut]);
+
 
     const [customer, setCustomer] = useState({
         data: {
