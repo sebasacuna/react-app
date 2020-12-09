@@ -1,5 +1,5 @@
 
-.menu-title{
+.menu-title {
     display: flex;
     background: #141414;
     color: #ececec;
@@ -10,7 +10,7 @@
     padding-left: 1rem;
 }
 
-.wrapper-menus{
+.wrapper-menus {
     display: flex;
     flex-direction: column;
 }

@@ -1,5 +1,5 @@
 
-.wrapper-menu-item{
+.wrapper-menu-item {
     display: flex;
     padding: 1rem 2rem;
     align-items: center;
@@ -20,21 +20,21 @@ a:visited {
 .wrapper-menu-item:hover {
     background: #ececec !important;
     color: #141414 !important;
-    text-decoration:none !important;
+    text-decoration: none !important;
 }
 
-.title{
+.title {
     margin-bottom: 2rem;
 }
 
-.controls{
+.controls {
     display: flex;
 }
 
-.customer-container{
+.customer-container {
     margin-top: 1rem;
 }
 
-.controls> *{
+.controls > * {
     margin-right: 2rem !important;
 }

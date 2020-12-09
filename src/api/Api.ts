@@ -1,6 +1,8 @@
 import axios, {AxiosResponse} from "axios"
 import {globalEndpoint} from "./Global";
 
+const Promise = require('es6-promise').Promise;
+
 export interface Customer {
     rut: string,
     name: string,

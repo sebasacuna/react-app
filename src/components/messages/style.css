@@ -1,0 +1,19 @@
+
+.info-messages {
+    color: #144a91;
+    margin-top: 20px;
+}
+
+.warning-messages {
+    color: #914814;
+    margin-top: 20px;
+}
+
+.error-messages {
+    color: #911414;
+    margin-top: 20px;
+}
+
+
+
+
